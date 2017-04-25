@@ -13,8 +13,8 @@ layout: null
           <title>{{ site.title }}</title>
           <url>{{ site.logo }}</url>
           <description>{{ site.description }}</description>
-          <height>1280</height>
-          <width>720</width>
+          <height>114</height>
+          <width>114</width>
       </image>
       {% for item in site.posts %}
       <item>

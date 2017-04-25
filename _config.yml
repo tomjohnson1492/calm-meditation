@@ -20,7 +20,7 @@ url: http://idratherbewriting.com
 baseurl_media: http://idratherassets.com/calm-meditation/
 github_username:  tomjohnson1492
 author: Tom Johnson
-logo: calmmeditationlogo_firetv.png
+logo: calmmeditationlogo_small.png
 
 # Build settings
 markdown: kramdown
