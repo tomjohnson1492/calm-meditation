@@ -19,6 +19,7 @@ baseurl: /calm-meditation
 url: http://idratherbewriting.com
 baseurl_media: http://idratherassets.com/calm-meditation/
 github_username:  tomjohnson1492
+author: Tom Johnson
 
 # Build settings
 markdown: kramdown

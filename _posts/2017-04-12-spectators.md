@@ -4,7 +4,8 @@ description: "&#34;Your worst enemy cannot harm you as much as your own thoughts
 media_thumbnail: spectators.png
 youtube_video_id: GHEz2Pg8pZU
 media_url: spectators.mp4
-filesize: 19
+filesize: 19000000
+duration: 02:00
 ---
 
 {% include youtube.html youtube_video_id=page.youtube_video_id %}
