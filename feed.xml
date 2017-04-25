@@ -9,7 +9,7 @@ layout: null
       <link>{{ site.url | append: site.baseurl }}</link>
       <description>{{ site.description }}</description>
       <image>
-          <link>{{ site.url | append: site.baseurl | append: site.logo }}</link>
+          <link>{{ site.url | append: site.baseurl }}/{{ site.logo }}</link>
           <title>{{ site.title }}</title>
           <url>{{ site.logo }}</url>
           <description>{{ site.description }}</description>
