@@ -9,7 +9,7 @@ layout: null
       <link>{{ site.url | append: site.baseurl }}</link>
       <description>{{ site.description }}</description>
       <image>
-          <link>{{ site.url | append: site.baseurl }}/{{ site.logo }}</link>
+          <link>{{ site.url }}/{{ site.baseurl }}/images/{{ site.logo }}</link>
           <title>{{ site.title }}</title>
           <url>{{ site.logo }}</url>
           <description>{{ site.description }}</description>
@@ -24,16 +24,15 @@ layout: null
          <description>{{ item.description }}</description>
          <guid isPermaLink="false">{{ item.url | prepend: site.baseurl | prepend: site.url }} </guid>
          <media:category>Lifestyle</media:category>
-         <media:category>Health &amp; Fitness</media:category>
          <media:content
-           url="{{ item.media_url | prepend: site.baseurl_media }}"
-           fileSize="{{ item.filesize }}"
-           type="video/mpeg"
-           height="1280"
-           width="720"
-           duration="{{ item.duration }}"
-           medium="video"
-           isDefault="true">
+             url="{{ item.media_url | prepend: site.baseurl_media }}"
+             fileSize="{{ item.filesize }}"
+             type="video/mpeg"
+             height="1280"
+             width="720"
+             duration="{{ item.duration }}"
+             medium="video"
+             isDefault="true">
             <media:title type="plain">{{ item.title }}</media:title>
             <media:description type="html">{{ item.description }}</media:description>
             <media:thumbnail url="{{ item.media_thumbnail | prepend: "/images/thumbs/" | prepend: site.url }}" width="300" height="300"/>
