@@ -8,6 +8,14 @@ layout: null
       <title>{{ site.title }}</title>
       <link>{{ site.url | append: site.baseurl }}</link>
       <description>{{ site.description }}</description>
+      <image>
+          <link>{{ site.url | append: site.baseurl | append: site.logo }}</link>
+          <title>{{ site.title }}</title>
+          <url>{{ site.logo }}</url>
+          <description>{{ site.description }}</description>
+          <height>1280</height>
+          <width>720</width>
+      </image>
       {% for item in site.posts %}
       <item>
          <title>{{ item.title }}</title>
