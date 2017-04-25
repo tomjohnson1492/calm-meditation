@@ -11,7 +11,7 @@ layout: null
       <image>
           <link>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</link>
           <title>{{ site.title }}</title>
-          <url>{{ site.logo }}</url>
+          <url>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</url>
           <description>{{ site.description }}</description>
           <height>114</height>
           <width>114</width>
