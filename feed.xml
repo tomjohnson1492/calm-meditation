@@ -15,7 +15,7 @@ layout: null
   <media:content url="{{ item.media_url | prepend: site.baseurl_media | prepend: site.url }}" fileSize="{{ item.filesize }}" type="video/x-msvideo" height="1280" width="720" duration="120" medium="video" isDefault="true">
     <media:title>{{ item.title }}</media:title>
     <media:description>{{ item.description }}</media:description>
-    <media:thumbnail url="{{ item.thumbail_url | prepend: "/images" | prepend: site.url }}" height="300" width="300"/>
+    <media:thumbnail url="{{ item.media_thumbnail | prepend: "/images/thumbs/" | prepend: site.url }}" height="300" width="300"/>
   </media:content>
 </item>
 {% endfor %}
