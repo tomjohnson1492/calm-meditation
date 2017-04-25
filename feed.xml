@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ site.title }}</title>
+<link>{{ site.url }}</link>
+<description>{{ site.description }}</description>
+{% for item in site.posts %}
+<item>
+  <title>{{ item.title }}</title>
+  <link>{{ item.url | prepend: site.baseurl | prepend: site.url }} </link>
+  <description>{{ item.description }}</description>
+  <guid isPermaLink="false">{{ item.url | prepend: site.url }}</guid>
+  <media:content url="{{ item.media_url | prepend: site.baseurl_media | prepend: site.url }}" fileSize="{{ item.filesize }}" type="video/x-msvideo" height="1280" width="720" duration="120" medium="video" isDefault="true">
+    <media:title>{{ item.title }}</media:title>
+    <media:description>{{ item.description }}</media:description>
+    <media:thumbnail url="{{ item.thumbail_url | prepend: "/images" | prepend: site.url }}" height="300" width="300"/>
+  </media:content>
+</item>
+{% endfor %}
+</channel>
+</rss>
