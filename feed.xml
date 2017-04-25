@@ -29,7 +29,7 @@ layout: null
          <link>{{ item.url | prepend: site.baseurl | prepend: site.url }} </link>
          <description>{{ item.description }}</description>
          <guid isPermaLink="false">{{ item.url | prepend: site.baseurl | prepend: site.url }} </guid>
-         <media:category>Lifestyle</media:category>
+         <media:category>{{ item.category }}</media:category>
          <media:content
              url="{{ item.media_url | prepend: site.baseurl_media }}"
              fileSize="{{ item.filesize }}"

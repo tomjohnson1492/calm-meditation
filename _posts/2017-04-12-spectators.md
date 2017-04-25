@@ -6,6 +6,7 @@ youtube_video_id: GHEz2Pg8pZU
 media_url: spectators.mp4
 filesize: 19000000
 duration: 02:00
+category: Grass
 ---
 
 {% include youtube.html youtube_video_id=page.youtube_video_id %}

@@ -6,6 +6,7 @@ youtube_video_id: DxNfIOvXzNI
 media_url: reduce_speed.mp4
 filesize: 37000000
 duration: 02:02
+category: Cars
 ---
 
 {% include youtube.html youtube_video_id=page.youtube_video_id %}

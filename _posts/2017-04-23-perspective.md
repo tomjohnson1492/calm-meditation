@@ -6,6 +6,7 @@ youtube_video_id: 3FqJOyjKPOY
 media_url: perspective.mp4
 filesize: 25000000
 duration: 02:00
+category: Building
 ---
 
 {% include youtube.html youtube_video_id=page.youtube_video_id %}
