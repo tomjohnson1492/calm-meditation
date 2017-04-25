@@ -7,16 +7,21 @@ layout: null
     xmlns:atom="http://www.w3.org/2005/Atom">
    <channel>
       <title>{{ site.title }}</title>
-      <link>{{ site.url | append: site.baseurl }}</link>
+      <link>{{ site.url }}{{ site.baseurl }}</link>
+      <language>en-us</language>
+      <pubDate>{{ site.time | date: "%a, %d %b %Y %T %z" }}</pubDate>
+      <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %T %z" }}</lastBuildDate>
+      <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
       <description>{{ site.description }}</description>
       <image>
-          <link>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</link>
+          <link>{{ site.url }}{{ site.baseurl }}</link>
           <title>{{ site.title }}</title>
           <url>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</url>
           <description>{{ site.description }}</description>
           <height>114</height>
           <width>114</width>
       </image>
+      <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
       {% for item in site.posts %}
       <item>
          <title>{{ item.title }}</title>
@@ -42,6 +47,5 @@ layout: null
          </media:content>
       </item>
       {% endfor %}
-      <atom:link href="{{ site.url }}/{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
    </channel>
 </rss>
