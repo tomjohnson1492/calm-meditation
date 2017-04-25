@@ -1,6 +1,6 @@
 ---
 title: Perspective
-description: "'Whatever has the nature of arising has the nature of ceasing.' The Buddha"
+description: "&#34;Whatever has the nature of arising has the nature of ceasing.&#34; The Buddha"
 media_thumbnail: perspective.png
 youtube_video_id: 3FqJOyjKPOY
 media_url: perspective.mp4
