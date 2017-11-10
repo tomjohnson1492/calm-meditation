@@ -46,7 +46,7 @@ logo: calmmeditationlogo_small.png
 markdown: kramdown
 theme: minima
 permalink: /:title/
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-mentions
   - jekyll-redirect-from
