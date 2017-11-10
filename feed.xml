@@ -42,8 +42,8 @@ layout: null
             <media:title type="plain">{{ item.title }}</media:title>
             <media:description type="html">{{ item.description }}</media:description>
             <media:thumbnail url="{{ item.media_thumbnail | prepend: "/images/thumbs/" | prepend: site.baseurl | prepend: site.url }}" width="300" height="300"/>
-            <media:credit role="author" scheme="urn:ebu">Tom Johnson</media:credit>
-            <media:copyright url="https://creativecommons.org/licenses/by/4.0/">Creative Commons (CC BY 4.0)</media:copyright>
+            <media:credit role="author" scheme="urn:ebu">{{ site.author }}</media:credit>
+            <media:copyright url="{{ site.copyright_url }}">{{ site.copyright_license }}</media:copyright>
          </media:content>
       </item>
       {% endfor %}

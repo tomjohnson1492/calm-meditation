@@ -2,7 +2,7 @@
 title: Reduce Speed
 description: "&#34;I do not dispute with the world; rather it is the world that disputes with me.&#34; -- Buddha"
 media_thumbnail: reduce_speed.png
-youtube_video_id: DxNfIOvXzNI
+youtube_video_id: 1VwzeRt4ruQ
 media_url: reduce_speed.mp4
 filesize: 37000000
 duration: 02:02

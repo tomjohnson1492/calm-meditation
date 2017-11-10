@@ -13,14 +13,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Tom's Github settings
+# title: Calm Meditation
+# baseurl: /calm-meditation
+# url: http://idratherbewriting.com
+# baseurl_media: http://idratherassets.com/calm-meditation/
+# github_username:  tomjohnson1492
+# author: Tom Johnson
+# email: tom@idratherbewriting.com
+
+# Amazon AWS settings
+
 title: Calm Meditation
-email: tom@idratherbewriting.com
-baseurl: /calm-meditation
-url: http://idratherbewriting.com
+email: tomjoht@amazon.com
+# baseurl: /sample-firetv-web-app
+url: http://sample-firetv-web-app.s3-website-us-west-2.amazonaws.com
+# baseurl_media: http://generic-nature-videos.s3-website-us-west-2.amazonaws.com/
+# hosting video on s3 doesn't seem to work.
 baseurl_media: http://idratherassets.com/calm-meditation/
-github_username:  tomjohnson1492
+github_username:  tomjoht
 author: Tom Johnson
-email: tom@idratherbewriting.com
+logo: calmmeditationlogo_small.png
+copyright_license:
+copyright_url: https://creativecommons.org/licenses/by/4.0/
+
+
+
 logo: calmmeditationlogo_small.png
 
 # Build settings
