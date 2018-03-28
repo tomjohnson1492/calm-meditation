@@ -19,7 +19,7 @@ layout: null
           <url>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</url>
           <description>{{ site.description }}</description>
           <height>114</height>
-          <width>114</width>
+          <width>114</width> 
       </image>
       <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
       {% for item in site.posts %}

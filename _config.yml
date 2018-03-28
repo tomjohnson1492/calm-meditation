@@ -26,11 +26,9 @@
 # Amazon AWS settings
 
 title: Calm Meditation
-email: tomjoht@amazon.com
+email: tomjoht@gmail.com
 # baseurl: /sample-firetv-web-app
-url: http://sample-firetv-web-app.s3-website-us-west-2.amazonaws.com
-# baseurl_media: http://generic-nature-videos.s3-website-us-west-2.amazonaws.com/
-# hosting video on s3 doesn't seem to work.
+url: http://idratherbewriting.com
 baseurl_media: http://idratherassets.com/calm-meditation/
 github_username:  tomjoht
 author: Tom Johnson
