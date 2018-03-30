@@ -1,12 +1,13 @@
 ---
 title: Spectators
 description: "&#34;Your worst enemy cannot harm you as much as your own thoughts, unguarded.&#34; – Buddha"
-media_thumbnail: spectators.png
+media_thumbnail: spectators.jpg
 youtube_video_id: GBLAqpTqM9o
 media_url: spectators.mp4
 filesize: 19000000
 duration: 02:00
 category: Grass
+bitrate: 2388
 ---
 
 {% include youtube.html youtube_video_id=page.youtube_video_id %}

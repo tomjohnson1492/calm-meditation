@@ -9,8 +9,8 @@ layout: null
       <title>{{ site.title }}</title>
       <link>{{ site.url }}{{ site.baseurl }}</link>
       <language>en-us</language>
-      <pubDate>{{ site.time | date: "%a, %d %b %Y %T %z" }}</pubDate>
-      <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %T %z" }}</lastBuildDate>
+      <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+      <lastBuildDate>{{ site.time | date_to_xmlschema}}</lastBuildDate>
       <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
       <description>{{ site.description }}</description>
       <image>
@@ -19,29 +19,29 @@ layout: null
           <url>{{ site.url }}{{ site.baseurl }}/images/{{ site.logo }}</url>
           <description>{{ site.description }}</description>
           <height>114</height>
-          <width>114</width> 
+          <width>114</width>
       </image>
       <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
       {% for item in site.posts %}
       <item>
-         <title>{{ item.title }}</title>
-         <pubDate>{{ item.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-         <link>{{ item.url | prepend: site.baseurl | prepend: site.url }} </link>
-         <description>{{ item.description }}</description>
-         <guid isPermaLink="false">{{ item.url | prepend: site.baseurl | prepend: site.url }} </guid>
-         <media:category>{{ item.category }}</media:category>
+        <guid>{{ item.url | prepend: site.baseurl | prepend: site.url }} </guid>
+        <pubDate>{{ item.date | date_to_xmlschema }}</pubDate>
+        <media:title type="plain">{{ item.title }}</media:title>
+        <media:description type="html">{{ item.description }}</media:description>
+        <media:category>{{ item.category }}</media:category>
+        <media:thumbnail url="{{ item.media_thumbnail | prepend: "/images/thumbs/" | prepend: site.baseurl | prepend: site.url }}" />
          <media:content
              url="{{ item.media_url | prepend: site.baseurl_media }}"
+             duration="{{ item.duration }}"
+             bitrate="{{ item.bitrate }}"
+             language="en-us"
              fileSize="{{ item.filesize }}"
              type="video/mpeg"
              height="1280"
              width="720"
-             duration="{{ item.duration }}"
              medium="video"
              isDefault="true">
-            <media:title type="plain">{{ item.title }}</media:title>
-            <media:description type="html">{{ item.description }}</media:description>
-            <media:thumbnail url="{{ item.media_thumbnail | prepend: "/images/thumbs/" | prepend: site.baseurl | prepend: site.url }}" width="300" height="300"/>
+
             <media:credit role="author" scheme="urn:ebu">{{ site.author }}</media:credit>
             <media:copyright url="{{ site.copyright_url }}">{{ site.copyright_license }}</media:copyright>
          </media:content>
