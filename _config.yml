@@ -27,9 +27,11 @@
 
 title: Calm Meditation
 email: tomjoht@gmail.com
-# baseurl: /sample-firetv-web-app
+# url: http://idratherassets.com
+# baseurl: /calm-meditation
 url: http://idratherbewriting.com
-baseurl_media: http://idratherassets.com/calm-meditation/
+baseurl: /calm-meditation
+baseurl_media: http://idratherassets.com/calm-meditation-videos/
 github_username:  tomjoht
 author: Tom Johnson
 logo: calmmeditationlogo_small.png
@@ -42,7 +44,6 @@ logo: calmmeditationlogo_small.png
 
 # Build settings
 markdown: kramdown
-theme: minima
 permalink: /:title/
 plugins:
   - jekyll-sitemap
